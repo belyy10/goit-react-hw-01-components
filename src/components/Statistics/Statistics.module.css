@@ -1,0 +1,24 @@
+.statistics  {
+    width: 300px;
+    margin: 10px auto;
+    border: 1px solid rgb(92, 87, 87);
+    background-color: lightgray;
+}
+.title {
+    text-align: center;
+    font-size: 16px;
+    
+}
+.list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100% / 5);
+    border-top: 1px solid lightslategray;
+}

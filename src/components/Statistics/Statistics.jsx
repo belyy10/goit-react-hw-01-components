@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 import css from './Statistics.module.css';
 import { getRandomHexColor } from '../utils/randomColor';
 
-export const Statistics = ({ stats }) => {
+export const Statistics = ({ stats, title}) => {
   return (
     <section className={css.statistics}>
-      <h2 className={css.title}>Upload stats</h2>
+      {title && <h2 className={css.title}>{title}</h2>}
       <ul className={css.list}>
         {stats.map(({ id, label, percentage }) => (
           <li
